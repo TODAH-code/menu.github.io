@@ -12,8 +12,12 @@ function how(event) {
     var ul = el.nextElementSibling
     if (el.nodeName == 'H4' && el.className == 'filter__title') {
         var display = ul.style.display == 'block' ? 'none' : 'block'
-        console.log(el.nodeName);
         ul.style.display = display
+
+        var arrow = el.querySelector('.arrow-items')
+        var rotate = arrow.style.transform == "rotate(90deg)" ? "rotate(0deg)" : "rotate(90deg)";
+        arrow.style.transform = rotate
+
     }
 }
 document.body.addEventListener('click', how)
