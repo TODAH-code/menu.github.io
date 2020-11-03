@@ -1,9 +1,9 @@
 const filter_events = {
     closeFilter: () => {
-        document.getElementById('mobile-filter').style.width = '0%'
+        document.getElementById('mobile-filter').style.height = '0%'
     },
     openFilter: () => {
-        document.getElementById('mobile-filter').style.width = '100%'
+        document.getElementById('mobile-filter').style.height = '100%'
     }
 }
 

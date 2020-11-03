@@ -5,13 +5,17 @@
   position: fixed;
   z-index: 999999;
   top: 0;
-  left: 0;
+  bottom: 0;
   background-color: rgb(253 250 251);
   overflow-x: hidden;
   transition: 0.5s;
 }
 header {
   padding: 1rem;
+}
+.filter-mobile-open {
+  text-align: right;
+  margin-right: 15px;
 }
 main {
   padding: 0 1rem 1rem 1rem;
