@@ -1,0 +1,116 @@
+.filter-mobile {
+  font-family: "Montserrat", sans-serif !important;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(253 250 251);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+header,
+main {
+  padding: 1rem;
+  background: #fdfafb;
+}
+header {
+  grid-column: 1 / 4;
+  border-bottom: 1px solid #d3d0d0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+header button {
+  border: none;
+  background-color: #fdfafb;
+}
+
+main {
+  background: rgb(253 250 251);
+  grid-column: 2 / 3;
+  overflow-y: visible;
+}
+
+main form section {
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.2s ease-in-out;
+}
+
+main form section .filter__list {
+  display: none;
+  margin-bottom: 14px;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+main form .filter__title {
+  font-weight: 500;
+  padding: 0px 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+main form .float-buttom {
+  bottom: 0px;
+  height: 13vh;
+  background-color: #fdfafb;
+  position: sticky;
+  border-top: 2px solid #5d5b5b38;
+}
+main form .filter__button {
+  width: 100%;
+  margin-top: 30px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.13),
+    0px 0px 2.9px rgba(0, 0, 0, 0.11);
+  background-color: #ec4a3e;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+button,
+section {
+  cursor: pointer;
+}
+
+main form section:hover {
+  border-bottom: 2px solid #d3d0d0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+main form .filter__button span {
+  opacity: 0.8;
+  color: #232323;
+}
+
+header .filter-closed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumb_breadcrumbs__2zE7M {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+ol {
+  justify-content: space-between;
+}
+
+.closed-filter span {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+main section .arrow-items {
+  text-align: end;
+  height: 24px;
+  color: black;
+  opacity: 0.8;
+  width: 24px;
+}

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <span style="font-size: 30px; cursor: pointer" onclick="openFilter()"
+      >&#9776; Filtro</span
+    >
+
+    <div class="filter-mobile" id="mobile-filter">
+      <header>
+        <nav>
+          <div class="dashboard_scope__2mOYH">
+            <ol class="breadcrumb_breadcrumbs__2zE7M">
+              <li class="breadcrumb_item__30eHx" data-geist-breadcrumb-item="">
+                <img
+                  async=""
+                  decoding="async"
+                  loading="lazy"
+                  importance="low"
+                  alt="Logo"
+                  title="Logo"
+                  src="https://images.tcdn.com.br/848578/themes/43/img/settings/logo-vw.png?ba5a525e964f6862d31c5158dd36d17a1604138055?ba5a525e964f6862d31c5158dd36d17a1604138054"
+                  style="height: 30px"
+                />
+              </li>
+              <li class="closed-filter">
+                <button id="closed-x" onclick="closeFilter()">
+                  <span>X</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <form class="filter__form" method="get">
+          <input type="hidden" name="loja" value="848578" /><input
+            type="hidden"
+            name="categoria"
+            value="5"
+          />
+          <div>
+            <section class="filter__block filter__block--categories">
+              <h4 class="filter__title">
+                <span>Categorias </span><span class="arrow-items">⮞</span>
+              </h4>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    id="Bata"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Bata"
+                  /><label class="filter__label" for="Bata"
+                    ><span class="list-name"> Bata</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Bermuda
+                                            Ciclista"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Bermuda Ciclista"
+                  /><label
+                    class="filter__label"
+                    for="Bermuda
+                                            Ciclista"
+                    ><span class="list-name"> Bermuda Ciclista</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Bermuda
+                                            Sarja"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Bermuda Sarja"
+                  /><label class="filter__label" for="Bermuda Sarja"
+                    ><span class="list-name"> Bermuda Sarja</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Bermuda
+                                            Saruel"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Bermuda Saruel"
+                  /><label
+                    class="filter__label"
+                    for="Bermuda
+                                            Saruel"
+                    ><span class="list-name"> Bermuda Saruel</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Calça
+                                            Legging"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="CalÃ§a Legging"
+                  /><label class="filter__label" for="Calça Legging"
+                    ><span class="list-name"> Calça Legging</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Calça
+                                            Skinny"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="CalÃ§a Skinny"
+                  /><label class="filter__label" for="Calça Skinny"
+                    ><span class="list-name"> Calça Skinny</span
+                    ><span class="filter__text filter__text--count"
+                      >(4)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Camisa"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Camisa"
+                  /><label class="filter__label" for="Camisa"
+                    ><span class="list-name"> Camisa</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Feminino"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Feminino"
+                  /><label class="filter__label" for="Feminino"
+                    ><span class="list-name"> Feminino</span
+                    ><span class="filter__text filter__text--count"
+                      >(20)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Infantil"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Infantil"
+                  /><label class="filter__label" for="Infantil"
+                    ><span class="list-name"> Infantil</span
+                    ><span class="filter__text filter__text--count"
+                      >(25)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Macacão"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="MacacÃ£o"
+                  /><label class="filter__label" for="Macacão"
+                    ><span class="list-name"> Macacão</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Macaquinho"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Macaquinho"
+                  /><label class="filter__label" for="Macaquinho"
+                    ><span class="list-name"> Macaquinho</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Masculino"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Masculino"
+                  /><label class="filter__label" for="Masculino"
+                    ><span class="list-name"> Masculino</span
+                    ><span class="filter__text filter__text--count"
+                      >(5)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Pijama"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Pijama"
+                  /><label class="filter__label" for="Pijama"
+                    ><span class="list-name"> Pijama</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Saia"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Saia"
+                  /><label class="filter__label" for="Saia"
+                    ><span class="list-name"> Saia</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Salopete"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Salopete"
+                  /><label class="filter__label" for="Salopete"
+                    ><span class="list-name"> Salopete</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Short"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Short"
+                  /><label class="filter__label" for="Short"
+                    ><span class="list-name"> Short</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Vestido"
+                    class="filter__input filter__input--category"
+                    type="checkbox"
+                    name="categories[]"
+                    value="Vestido"
+                  /><label class="filter__label" for="Vestido"
+                    ><span class="list-name"> Vestido</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="filter__block filter__block--prices">
+              <h4 class="filter__title">
+                <span>Preço</span><span class="arrow-items">⮞</span>
+              </h4>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    id="34.89-42.89"
+                    class="filter__input filter__input--price"
+                    type="checkbox"
+                    name="prices[]"
+                    value="34.89,42.89"
+                  /><label class="filter__label" for="34.89-42.89"
+                    ><span class="list-name"> Até R$ 42,89 </span></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="42.9-50.89"
+                    class="filter__input filter__input--price"
+                    type="checkbox"
+                    name="prices[]"
+                    value="42.9,50.89"
+                  /><label class="filter__label" for="42.9-50.89"
+                    ><span class="list-name">
+                      De R$ 42,90 à R$ 50,89
+                    </span></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="50.9-58.89"
+                    class="filter__input filter__input--price"
+                    type="checkbox"
+                    name="prices[]"
+                    value="50.9,58.89"
+                  /><label class="filter__label" for="50.9-58.89"
+                    ><span class="list-name">
+                      De R$ 50,90 à R$ 58,89
+                    </span></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="58.9-66.89"
+                    class="filter__input filter__input--price"
+                    type="checkbox"
+                    name="prices[]"
+                    value="58.9,66.89"
+                  /><label class="filter__label" for="58.9-66.89"
+                    ><span class="list-name">
+                      De R$ 58,90 à R$ 66,89
+                    </span></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="66.9-74.89"
+                    class="filter__input filter__input--price"
+                    type="checkbox"
+                    name="prices[]"
+                    value="66.9,74.89"
+                  /><label class="filter__label" for="66.9-74.89"
+                    ><span class="list-name">
+                      De R$ 66,90 à R$ 74,89
+                    </span></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="74.9-79.9"
+                    class="filter__input filter__input--price"
+                    type="checkbox"
+                    name="prices[]"
+                    value="74.9,79.9"
+                  /><label class="filter__label" for="74.9-79.9"
+                    ><span class="list-name"> Acima de R$ 74,90 </span></label
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="filter__block filter__block--brands">
+              <h4 class="filter__title">
+                <span>Marcas</span><span class="arrow-items">⮞</span>
+              </h4>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    id="Candy Sky"
+                    class="filter__input filter__input--brand"
+                    type="checkbox"
+                    name="brands[]"
+                    value="Candy Sky"
+                  /><label class="list-name" for="Candy Sky"
+                    ><span class="">Candy Sky</span
+                    ><span class="filter__text filter__text--count"
+                      >(25)</span
+                    ></label
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="filter__block filter__block--properties">
+              <h4 class="filter__title">
+                <span>Cor</span><span class="arrow-items">⮞</span>
+              </h4>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    id="Amarelo"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Cor||Amarelo"
+                  /><label class="filter__label" for="Amarelo"
+                    ><span class="list-name">Amarelo</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Azul"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Cor||Azul"
+                  /><label class="filter__label" for="Azul"
+                    ><span class="list-name">Azul</span
+                    ><span class="filter__text filter__text--count"
+                      >(7)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Branco"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Cor||Branco"
+                  /><label class="filter__label" for="Branco"
+                    ><span class="list-name">Branco</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Chiclete"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Cor||Chiclete"
+                  /><label class="filter__label" for="Chiclete"
+                    ><span class="list-name">Chiclete</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Preto"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Cor||Preto"
+                  /><label class="filter__label" for="Preto"
+                    ><span class="list-name">Preto</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Rosa"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Cor||Rosa"
+                  /><label class="filter__label" for="Rosa"
+                    ><span class="list-name">Rosa</span
+                    ><span class="filter__text filter__text--count"
+                      >(5)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Vermelho"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Cor||Vermelho"
+                  /><label class="filter__label" for="Vermelho"
+                    ><span class="list-name">Vermelho</span
+                    ><span class="filter__text filter__text--count"
+                      >(1)</span
+                    ></label
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="filter__block filter__block--properties">
+              <h4 class="filter__title">
+                <span>Estação</span><span class="arrow-items">⮞</span>
+              </h4>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    id="Inverno"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="EstaÃ§Ã£o||Inverno"
+                  /><label class="filter__label" for="Inverno"
+                    ><span class="list-name">Inverno</span
+                    ><span class="filter__text filter__text--count"
+                      >(2)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Primavera"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="EstaÃ§Ã£o||Primavera"
+                  /><label class="filter__label" for="Primavera"
+                    ><span class="list-name">Primavera</span
+                    ><span class="filter__text filter__text--count"
+                      >(22)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Verão"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="EstaÃ§Ã£o||VerÃ£o"
+                  /><label class="filter__label" for="Verão"
+                    ><span class="list-name">Verão</span
+                    ><span class="filter__text filter__text--count"
+                      >(16)</span
+                    ></label
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="filter__block filter__block--properties">
+              <h4 class="filter__title">
+                <span>Gênero</span><span class="arrow-items">⮞</span>
+              </h4>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    id="Femino"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="GÃªnero||Femino"
+                  /><label class="filter__label" for="Femino"
+                    ><span class="list-name">Femino</span
+                    ><span class="filter__text filter__text--count"
+                      >(19)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="Masculino"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="GÃªnero||Masculino"
+                  /><label class="filter__label" for="Masculino"
+                    ><span class="list-name">Masculino</span
+                    ><span class="filter__text filter__text--count"
+                      >(5)</span
+                    ></label
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="filter__block filter__block--properties">
+              <h4 class="filter__title">
+                <span>Tamanho</span><span class="arrow-items">⮞</span>
+              </h4>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    id="1"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Tamanho||1"
+                  /><label class="filter__label" for="1"
+                    ><span class="list-name">1</span
+                    ><span class="filter__text filter__text--count"
+                      >(16)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="2"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Tamanho||2"
+                  /><label class="filter__label" for="2"
+                    ><span class="list-name">2</span
+                    ><span class="filter__text filter__text--count"
+                      >(19)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="3"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Tamanho||3"
+                  /><label class="filter__label" for="3"
+                    ><span class="list-name">3</span
+                    ><span class="filter__text filter__text--count"
+                      >(19)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="4"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Tamanho||4"
+                  /><label class="filter__label" for="4"
+                    ><span class="list-name">4</span
+                    ><span class="filter__text filter__text--count"
+                      >(18)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="6"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Tamanho||6"
+                  /><label class="filter__label" for="6"
+                    ><span class="list-name">6</span
+                    ><span class="filter__text filter__text--count"
+                      >(17)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="8"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Tamanho||8"
+                  /><label class="filter__label" for="8"
+                    ><span class="list-name">8</span
+                    ><span class="filter__text filter__text--count"
+                      >(19)</span
+                    ></label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    id="10"
+                    class="filter__input filter__input--propertie"
+                    type="checkbox"
+                    name="variants[]"
+                    value="Tamanho||10"
+                  /><label class="filter__label" for="10"
+                    ><span class="list-name">10</span
+                    ><span class="filter__text filter__text--count"
+                      >(17)</span
+                    ></label
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="float-buttom">
+            <button type="submit" class="filter__button">
+              <span>Filtrar</span>
+            </button>
+          </div>
+        </form>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
