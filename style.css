@@ -63,7 +63,16 @@ main form .filter__item {
 main form .filter__item input {
   display: none;
 }
+main form .filter__item > input[type="checkbox"]:checked + label {
+  color: white;
+  background-image: linear-gradient(
+    140deg,
+    rgb(46 44 60) 0%,
+    rgb(66 66 66) 100%
+  );
+}
 main form .filter__item .filter__label {
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -83,7 +92,7 @@ main form .filter__button {
   background-color: #ec4a3e;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 15px;
+  padding: 10px;
 }
 
 button,
