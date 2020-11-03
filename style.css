@@ -77,7 +77,8 @@ main form .filter__item .filter__label {
   justify-content: space-between;
 }
 main form .float-buttom {
-  bottom: 0px;
+  bottom: 0;
+  margin-bottom: 14px;
   height: 13vh;
   background-color: #fdfafb;
   position: sticky;
