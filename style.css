@@ -10,9 +10,11 @@
   overflow-x: hidden;
   transition: 0.5s;
 }
-header,
-main {
+header {
   padding: 1rem;
+}
+main {
+  padding: 0 1rem 1rem 1rem;
   background: #fdfafb;
 }
 header {
@@ -70,7 +72,6 @@ main form .float-buttom {
   height: 13vh;
   background-color: #fdfafb;
   position: sticky;
-  border-top: 2px solid #5d5b5b38;
 }
 main form .filter__button {
   width: 100%;
